@@ -1,0 +1,70 @@
+---
+title: "Codebook"
+author: "Lucas Gebhart"
+date: "11/11/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# I performed the following tasks/modifications to the provided data
+Merging the training and the test sets to create one data set.
+Extracting only the measurements on the mean and standard deviation for each measurement.
+Using descriptive activity names to name the activities in the data set
+Appropriately labeling the data set with descriptive variable names.
+Creating a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+
+# The data set contains the following variables. The first two are the subject and the activity
+# The remaining variables are measurements from gyros and accelerometers on subjects.
+
+ [1] "Subject"                                            "Activity"                                          
+ [3] "TimeBodyAccelerometer-Mean()-X"                     "TimeBodyAccelerometer-Mean()-Y"                    
+ [5] "TimeBodyAccelerometer-Mean()-Z"                     "TimeBodyAccelerometer-STD()-X"                     
+ [7] "TimeBodyAccelerometer-STD()-Y"                      "TimeBodyAccelerometer-STD()-Z"                     
+ [9] "TimeGravityAccelerometer-Mean()-X"                  "TimeGravityAccelerometer-Mean()-Y"                 
+[11] "TimeGravityAccelerometer-Mean()-Z"                  "TimeGravityAccelerometer-STD()-X"                  
+[13] "TimeGravityAccelerometer-STD()-Y"                   "TimeGravityAccelerometer-STD()-Z"                  
+[15] "TimeBodyAccelerometerJerk-Mean()-X"                 "TimeBodyAccelerometerJerk-Mean()-Y"                
+[17] "TimeBodyAccelerometerJerk-Mean()-Z"                 "TimeBodyAccelerometerJerk-STD()-X"                 
+[19] "TimeBodyAccelerometerJerk-STD()-Y"                  "TimeBodyAccelerometerJerk-STD()-Z"                 
+[21] "TimeBodyGyro-Mean()-X"                              "TimeBodyGyro-Mean()-Y"                             
+[23] "TimeBodyGyro-Mean()-Z"                              "TimeBodyGyro-STD()-X"                              
+[25] "TimeBodyGyro-STD()-Y"                               "TimeBodyGyro-STD()-Z"                              
+[27] "TimeBodyGyroJerk-Mean()-X"                          "TimeBodyGyroJerk-Mean()-Y"                         
+[29] "TimeBodyGyroJerk-Mean()-Z"                          "TimeBodyGyroJerk-STD()-X"                          
+[31] "TimeBodyGyroJerk-STD()-Y"                           "TimeBodyGyroJerk-STD()-Z"                          
+[33] "TimeBodyAccelerometerMagnitude-Mean()"              "TimeBodyAccelerometerMagnitude-STD()"              
+[35] "TimeGravityAccelerometerMagnitude-Mean()"           "TimeGravityAccelerometerMagnitude-STD()"           
+[37] "TimeBodyAccelerometerJerkMagnitude-Mean()"          "TimeBodyAccelerometerJerkMagnitude-STD()"          
+[39] "TimeBodyGyroMagnitude-Mean()"                       "TimeBodyGyroMagnitude-STD()"                       
+[41] "TimeBodyGyroJerkMagnitude-Mean()"                   "TimeBodyGyroJerkMagnitude-STD()"                   
+[43] "FrequencyBodyAccelerometer-Mean()-X"                "FrequencyBodyAccelerometer-Mean()-Y"               
+[45] "FrequencyBodyAccelerometer-Mean()-Z"                "FrequencyBodyAccelerometer-STD()-X"                
+[47] "FrequencyBodyAccelerometer-STD()-Y"                 "FrequencyBodyAccelerometer-STD()-Z"                
+[49] "FrequencyBodyAccelerometer-MeanFreq()-X"            "FrequencyBodyAccelerometer-MeanFreq()-Y"           
+[51] "FrequencyBodyAccelerometer-MeanFreq()-Z"            "FrequencyBodyAccelerometerJerk-Mean()-X"           
+[53] "FrequencyBodyAccelerometerJerk-Mean()-Y"            "FrequencyBodyAccelerometerJerk-Mean()-Z"           
+[55] "FrequencyBodyAccelerometerJerk-STD()-X"             "FrequencyBodyAccelerometerJerk-STD()-Y"            
+[57] "FrequencyBodyAccelerometerJerk-STD()-Z"             "FrequencyBodyAccelerometerJerk-MeanFreq()-X"       
+[59] "FrequencyBodyAccelerometerJerk-MeanFreq()-Y"        "FrequencyBodyAccelerometerJerk-MeanFreq()-Z"       
+[61] "FrequencyBodyGyro-Mean()-X"                         "FrequencyBodyGyro-Mean()-Y"                        
+[63] "FrequencyBodyGyro-Mean()-Z"                         "FrequencyBodyGyro-STD()-X"                         
+[65] "FrequencyBodyGyro-STD()-Y"                          "FrequencyBodyGyro-STD()-Z"                         
+[67] "FrequencyBodyGyro-MeanFreq()-X"                     "FrequencyBodyGyro-MeanFreq()-Y"                    
+[69] "FrequencyBodyGyro-MeanFreq()-Z"                     "FrequencyBodyAccelerometerMagnitude-Mean()"        
+[71] "FrequencyBodyAccelerometerMagnitude-STD()"          "FrequencyBodyAccelerometerMagnitude-MeanFreq()"    
+[73] "FrequencyBodyAccelerometerJerkMagnitude-Mean()"     "FrequencyBodyAccelerometerJerkMagnitude-STD()"     
+[75] "FrequencyBodyAccelerometerJerkMagnitude-MeanFreq()" "FrequencyBodyGyroMagnitude-Mean()"                 
+[77] "FrequencyBodyGyroMagnitude-STD()"                   "FrequencyBodyGyroMagnitude-MeanFreq()"             
+[79] "FrequencyBodyGyroJerkMagnitude-Mean()"              "FrequencyBodyGyroJerkMagnitude-STD()"              
+[81] "FrequencyBodyGyroJerkMagnitude-MeanFreq()"          "Angle(TimeBodyAccelerometerMean,Gravity)"          
+[83] "Angle(TimeBodyAccelerometerJerkMean),GravityMean)"  "Angle(TimeBodyGyroMean,GravityMean)"               
+[85] "Angle(TimeBodyGyroJerkMean,GravityMean)"            "Angle(X,GravityMean)"                              
+[87] "Angle(Y,GravityMean)"                               "Angle(Z,GravityMean)"   
+```
+
+
+
+
